@@ -10,8 +10,8 @@ describe 'user' do
       fill_in :student_name, with: name
 
       click_on 'submit'
-
-      expect(current_path).to be(students_path)
+     
+      expect(current_path).to eq(students_path)
       expect(page).to have_content(name)
     end
   end
