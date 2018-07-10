@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html>
+<header>
+  <h3>All Students</h3>
+</header>
+<body>
+  <ul>
+    <% @students.each do |student| %>
+      <li> <%= link_to student.name, student_path(student)%> </li>
+    <% end %>
+  </ul>
+</body>
+</html>
