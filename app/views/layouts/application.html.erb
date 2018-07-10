@@ -7,7 +7,10 @@
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
   </head>
-
+  <nav>
+    <%= link_to 'All Students', students_path %>
+    <%= link_to 'New Student', new_student_path %>
+  </nav>
   <body>
     <%= yield %>
   </body>
