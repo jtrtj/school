@@ -11,9 +11,3 @@ describe 'user' do
     end
   end
 end
-
-=begin
-As a user
-When I visit `/students/:id`
-I see the name of a student
-=end
