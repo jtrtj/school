@@ -6,8 +6,8 @@ describe 'user' do
       student = Student.create(name: 'kjh')
 
       visit student_path(student)
-
-      expext(page).to have_content("Name : #{student.name}")
+      
+      expect(page).to have_content("Name : #{student.name}")
     end
   end
 end
