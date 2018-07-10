@@ -6,4 +6,8 @@ class StudentsController < ApplicationController
   def index
     @students = Student.all
   end
+
+  def new
+    @stduent = Student.new
+  end
 end
