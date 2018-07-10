@@ -33,7 +33,6 @@ class StudentsController < ApplicationController
       render :edit
     end
 
-    
   end
   
   def destroy
@@ -42,7 +41,7 @@ class StudentsController < ApplicationController
     student.destroy
     redirect_to students_path
   end
-  
+
   private
 
   def student_params
