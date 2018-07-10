@@ -28,7 +28,7 @@ describe 'user' do
       
       click_on 'submit'
 
-      expect(current_path).to eq(student_path(student))
+      expect(current_path).to eq(student_path(student_1))
       expect(page).to have_content('description: sdfg')
       expect(page).to have_content('street: ghgf')
       expect(page).to have_content('city: bvcx')
