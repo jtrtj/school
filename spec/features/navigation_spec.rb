@@ -1,11 +1,3 @@
-
-=begin
-As a user
-When I visit `/students`
-And I click on a student's name
-I am taken to a show page for that student
-=end
-
 require 'rails_helper'
 
 describe 'user' do
