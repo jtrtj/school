@@ -27,7 +27,7 @@ describe 'user' do
       fill_in :address_zip_code, with: '34567'
       
       click_on 'submit'
-
+      save_and_open_page
       expect(current_path).to eq(student_path(student_1))
       expect(page).to have_content('description: sdfg')
       expect(page).to have_content('street: ghgf')
