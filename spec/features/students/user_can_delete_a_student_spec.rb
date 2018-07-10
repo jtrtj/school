@@ -5,9 +5,10 @@ describe 'user' do
       student_1 = Student.create(name: 'jhg')
      
       visit students_path
-      
-      within "#student-#{student_1.id}"
-      click_on 'delete'
+     
+      within "#student-#{student_1.id}" do
+       click_on 'delete'
+      end
      
       expect(page).to_not have_content(student_1.name)
     end

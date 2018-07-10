@@ -6,7 +6,10 @@
 <body>
   <ul>
     <% @students.each do |student| %>
+    <div id="student-<%= student.id %>">
       <li> <%= link_to student.name, student_path(student)%> </li>
+      <li> <%= button_to "delete", student_path(student), method: "delete" %> </li>
+    </div>
     <% end %>
   </ul>
 </body>
