@@ -33,8 +33,7 @@ describe 'user' do
 
       click_on student_1.name
 
-      expect(current_path.to eq(student_path(student_1))
+      expect(current_path).to eq(student_path(student_1))
     end
-
   end
 end
